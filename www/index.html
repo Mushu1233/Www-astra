@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astra Browser — Главная</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #16213e 0%, #1a1a2e 50%, #23172e 100%);
+    color: #e6e6e6; min-height: 100vh;
+  }
+  .topbar { background:#0f0f1f; color:#fff; padding:12px 24px; display:flex; align-items:center; justify-content:space-between; border-bottom:3px solid #f05a28; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .brand img { height:32px; }
+  .brand b { font-size:18px; letter-spacing:1px; }
+  .nav a { color:#ccc; text-decoration:none; margin-left:18px; font-size:14px; }
+  .nav a:hover { color:#f05a28; }
+  .hero { text-align:center; padding:70px 20px 40px; }
+  .hero img.logo { width:120px; height:120px; }
+  .hero h1 { font-size:38px; color:#fff; letter-spacing:2px; margin-top:14px; }
+  .hero p { color:#bbb; font-size:16px; margin:14px auto 0; max-width:620px; line-height:1.6; }
+  .btn { display:inline-block; background:#f05a28; color:#fff; text-decoration:none; padding:14px 30px; border-radius:6px; font-weight:bold; font-size:16px; margin:26px 6px 0; }
+  .btn.ghost { background:transparent; border:1px solid #f05a28; }
+  .btn:hover { background:#ff6a35; }
+  .features { display:flex; flex-wrap:wrap; gap:22px; justify-content:center; padding:40px 20px 50px; max-width:1000px; margin:0 auto; }
+  .feat { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:10px; width:250px; padding:22px; text-align:center; }
+  .feat .ic { font-size:30px; }
+  .feat h3 { color:#fff; margin:10px 0 6px; font-size:16px; }
+  .feat p { color:#999; font-size:13px; }
+  .footer { text-align:center; color:#777; font-size:12px; padding:22px; border-top:1px solid rgba(255,255,255,.08); }
+  .footer a { color:#f05a28; text-decoration:none; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand"><img src="astra_logo.png" alt=""><b>Astra Browser</b>
+      <button class="hamburger" onclick="toggleMenu()">☰</button></div>
+    <div class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="product.html">Продукт</a>
+      <a href="news.html">Новости</a>
+      <a href="install.html">Установка</a>
+      <a href="download.html">Скачать</a>
+      <a href="support.html">Поддержка</a>
+      <a href="about.html">О нас</a>
+    </div>
+  </div>
+  <script>function toggleMenu(){ var n=document.getElementById('nav'); n.classList.toggle('open'); }</script>
+
+  <div class="hero">
+    <img class="logo" src="astra_logo.png" alt="Astra Browser">
+    <h1>Astra Browser</h1>
+    <p>Лёгкий, быстрый и настраиваемый браузер для Windows и Android. Современный движок, темы, обои и бережное отношение к вашему времени.</p>
+    <a class="btn" href="download.html">Скачать бесплатно</a>
+    <a class="btn ghost" href="product.html">Подробнее</a>
+  </div>
+
+  <div class="features">
+    <div class="feat"><div class="ic">⚡</div><h3>Быстро</h3><p>Мгновенный запуск и отзывчивый интерфейс.</p></div>
+    <div class="feat"><div class="ic">🎨</div><h3>Настраиваемый</h3><p>Темы окна, главная, обои — всё своё.</p></div>
+    <div class="feat"><div class="ic">🛡️</div><h3>Надёжный</h3><p>Профили, загрузки, страницы ошибок.</p></div>
+  </div>
+
+  <div class="footer">
+    © Astra Browser — Windows и Android • <a href="https://vk.ru/club242805539" target="_blank">Сообщество ВК</a>
+  </div>
+</body>
+</html>
